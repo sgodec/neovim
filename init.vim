@@ -142,7 +142,7 @@ let g:coc_global_extensions = [
 \ 'coc-clangd'
 \ ]
 
-nnoremap <C-S> :wqa<CR>
+nnoremap <C-S> :wqa!<CR>
 nnoremap <C-X> :w!<CR>
 nnoremap <C-Q> :q!<CR>
 inoremap <C-X> <Esc>
