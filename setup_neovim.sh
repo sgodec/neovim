@@ -26,14 +26,14 @@ backup_if_exists ~/.config/nvim
 git clone https://github.com/sgodec/neovim ~/.config/nvim
 
 # Install NVM (Node Version Manager) and back up existing NVM directory if it exists
-backup_if_exists ~/.nvm
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
 # Load NVM into current session
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
-# Install Node.js using NVM
+#install nvm
+nvm install --lts
 nvm install node
 
 # Run Neovim and install plugins
